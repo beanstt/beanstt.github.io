@@ -4,4 +4,6 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.
+长期从事一线代码，对于手机摄影，深夜黑暗料理，火箭头擦洗，AK47溜弹作业，航母泊岸弹射等也都有略微研究。本人微信，酌情扫描。
+
+![我的微信](/sources/images/weixingeren.jpg)
