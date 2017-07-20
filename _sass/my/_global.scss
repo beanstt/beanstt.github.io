@@ -22,6 +22,16 @@ input, label, select, option, textarea, button, fieldset, legend {
     border: solid rgba(77, 80, 82, 0.16);
     height: 150px;
 }
+.my-thumbnail:hover{
+    background: #f7f7f7;
+    border-color: #fff;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    box-shadow: 0 45px 60px -50px #000000;
+}
 .my-top{
     padding-top: 40px;
 }
