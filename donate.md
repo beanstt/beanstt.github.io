@@ -8,6 +8,4 @@ permalink: /donate/
 
 本人微信支付，扫描，慎重支付，小助怡情，大助伤身。
 
-<img src="sources/images/weixinzanzhu.png" width = "300" height = "400" alt="我的微信" align=center />
-
-[注释]:![我的微信支付](/sources/images/weixinzanzhu.png)
+![我的微信支付](/sources/images/weixinzanzhu.png)

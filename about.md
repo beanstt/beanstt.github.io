@@ -8,7 +8,4 @@ permalink: /about/
 
 【以梦为马 不负韶华！ 人生伟业的建立，不在能知，乃在能行。】
 
-<img src="sources/images/weixingeren.jpg" width = "300" height = "300" alt="我的微信" align=center />
-
-
-[注释]:![我的微信](/sources/images/weixingeren.jpg)
+![我的微信](/sources/images/weixingeren.jpg)
