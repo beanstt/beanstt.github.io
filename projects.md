@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 开源项目
+title: 工作室
 permalink: /projects/
 ---
 
