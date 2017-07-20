@@ -6,8 +6,9 @@ input, label, select, option, textarea, button, fieldset, legend {
     font-family: "Microsoft Yahei","微软雅黑",SimSun,sans-serif !important;
 }
 .main-container{
-    padding-top: 70px;
-    padding-bottom: 30px;
+    width: 1040px;
+    padding-top: 70px 20px 30px 20px;
+    margin: 0 auto;
 }
 .icon--gitee{
     background-image: url('../../sources/images/icon-gitee.ico'); 
@@ -16,9 +17,4 @@ input, label, select, option, textarea, button, fieldset, legend {
 }
 .page-content{
     margin-top: 70px;
-}
-.ui.container {
-    width: 1040px;
-    padding: 0 20px;
-    margin: 0 auto;
 }
