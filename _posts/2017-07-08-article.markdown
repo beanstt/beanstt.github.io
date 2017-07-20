@@ -2,6 +2,6 @@
 layout: post
 title:  "这是我自己的一篇文章"
 date:   2017-07-08 16:24:20 +0800
-categories: cripps update
+categories: update
 ---
 这是我自己的内容，可以开始写内容了。
