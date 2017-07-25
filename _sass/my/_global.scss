@@ -5,6 +5,12 @@ body{
 input, label, select, option, textarea, button, fieldset, legend { 
     font-family: "Microsoft Yahei","微软雅黑",SimSun,sans-serif !important;
 }
+.h1, h1 {
+    font-size: 2rem;
+}
+h2{
+    font-weight: 600
+}
 .main-container{
     padding-top: 70px 20px 30px 20px;
     margin: 0 auto;
