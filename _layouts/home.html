@@ -8,7 +8,7 @@ layout: default
   
   {{ content }}
 
-  <ul class="post-list">
+  <ul class="post-list content col-sm-9">
     {% for post in site.posts %}
       <li>
         {% assign date_format = site.minima.date_format | default: "%Y-%m-%d %H:%M:%S" %}
@@ -20,6 +20,7 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+  <div class="col-sm-3"></div>
 
   <!-- <p class="我的码云">git me <a href="https://gitee.com/cripps" target=_blank>via GitEE</a></p> -->
 
