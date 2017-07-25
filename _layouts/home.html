@@ -9,18 +9,19 @@ layout: default
   {{ content }}
 
   <!-- <ul class="post-list col-sm-10 col-md-9"> -->
-    {% for post in site.posts %}
-      <!-- <li>
+< <div class="col-sm-12 col-md-9">
+    <div class="list-group">
+      
+      {% for post in site.posts %}
+      <!-- <li> -->
         {% assign date_format = site.minima.date_format | default: "%Y-%m-%d %H:%M:%S" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <!-- <span class="post-meta">{{ post.date | date: date_format }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
       </li> -->
-  <!-- </ul> -->
-< <div class="col-sm-12 col-md-9">
-    <div class="list-group">
+
       <a href="{{ post.url | relative_url }}" class="list-group-item list-group-item-action flex-column align-items-start">
         <div class="d-flex w-100 justify-content-between">
           <h5 class="mb-1">{{ post.title | escape }}</h5>
@@ -28,8 +29,10 @@ layout: default
         </div>
       </a>
     </div>
+  <!-- </ul> -->
   </div>
     {% endfor %}
+
   <div class="col-sm-12 col-md-3"></div>
 
   <!-- <p class="我的码云">git me <a href="https://gitee.com/cripps" target=_blank>via GitEE</a></p> -->
