@@ -10,14 +10,21 @@ layout: default
 
   <ul class="post-list content col-sm-10 col-md-9">
     {% for post in site.posts %}
-      <li>
+      <!-- <li>
         {% assign date_format = site.minima.date_format | default: "%Y-%m-%d %H:%M:%S" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
-      </li>
+      </li> -->
+
+      <a href="{{ post.url | relative_url }}" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">{{ post.title | escape }}</h5>
+          <small>{{ post.date | date: date_format }}</small>
+        </div>
+      </a>
     {% endfor %}
   </ul>
   <div class="col-sm-2 col-md-3"></div>
