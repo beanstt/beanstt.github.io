@@ -9,6 +9,17 @@ layout: default
   {{ content }}
 
   <ul class="post-list content col-sm-10 col-md-9">
+    <form action="/search.html" method="get">
+      <div class="form-group row">
+        <div class="col-md-11">
+          <input type="text" class="form-control" id="search-box" name="query" placeholder="请输入关键字">
+        </div>
+        <div class="col-md-1">
+          <button type="submit" class="btn btn-success float-sm-right">搜一搜</button>
+        </div>
+      </div>
+    </form>
+
     {% for post in site.posts %}
       <!-- <li> -->
         {% assign date_format = site.minima.date_format | default: "%Y-%m-%d %H:%M:%S" %}
