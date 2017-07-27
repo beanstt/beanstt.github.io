@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "jdk7 mysql5.5 tomcat7下载地址"
+title:  "Jdk7 MySQL5.5 Tomcat7下载地址"
 date:   2017-07-19 10:04:01 +0800
 categories: other
 ---

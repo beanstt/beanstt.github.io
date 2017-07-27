@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "springboot boot cmd"
+title:  "SpringBoot boot cmd"
 date:   2017-07-19 09:24:20 +0800
 categories: springboot
 ---
