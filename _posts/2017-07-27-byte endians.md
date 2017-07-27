@@ -18,7 +18,7 @@ big-edian和little-endian。
     **词源**：据Jargon File记载，endian这个词来源于Jonathan Swift在1726年写的讽刺小说 "Gulliver's Travels"（《格利佛游记》）。该小说在描述Gulliver畅游小人国时碰到了如下的一个场景。在小人国里的小人因为非常小（身高6英寸）所以总是碰到一些意想不到的问题。有一次因为对水煮蛋该从大的一端（Big-End）剥开还是小的一端（Little-End）剥开的争论而引发了一场战争，并形成了两支截然对立的队伍：支持从Big-End剥开的人Swift就称作Big-Endians而支持从Little-End剥开的人就称作Little-Endians……（后缀ian表明的就是支持某种观点的人:-）。Endian这个词由此而来。</br>
     　　1980年，Danny Cohen在其著名的论文"On Holy Wars and a Plea for Peace"中为了平息一场关于在消息中字节该以什么样的顺序进行传送的争论而引用了该词。该文中，Cohen非常形象贴切地把支持从一个消息序列的MSB开始传送的那伙人叫做Big-Endians，支持从LSB开始传送的相对应地叫做Little-Endians。此后Endian这个词便随着这篇论文而被广为采用。
 
-![](/sources/images/posts/250px-Endianessmap_svg.png)</br>
+![](../../../../sources/images/posts/250px-Endianessmap_svg.png)
 **Mapping registers to memory locations**
 </br></br></br></br>
  
@@ -35,14 +35,14 @@ big-edian和little-endian。
     低地址存放最高有效位（MSB），既高位字节排放在内存的低地址端，低位字节排放在内存的高地址端。
     计算机体系结构中一种描述多字节存储顺序的术语，在这种机制中最高有效位（MSB）存放在最低端的地址上。采用这种机制的处理器有IBM3700系列、PDP-10、Mortolora微处理器系列和绝大多数的RISC处理器。</br>
 
-![](/sources/images/posts/280px-Big-Endian_svg.png)</br>
+![](../../../../sources/images/posts/280px-Big-Endian_svg.png)
  
  
 ## 小端Little-Endian
     低地址存放最低有效位（LSB），既低位字节排放在内存的低地址端，高位字节排放在内存的高地址端。
     计算机体系结构中一种描述多字节存储顺序的术语，在这种机制中最不重要字节（LSB）存放在最低端的地址上。采用这种机制的处理器有PDP-11、VAX、Intel系列微处理器和一些网络通信设备。该术语除了描述多字节存储顺序外还常常用来描述一个字节中各个比特的排放次序。</br>
 
-![](/sources/images/posts/280px-Little-Endian_svg.png)</br>
+![](../../../../sources/images/posts/280px-Little-Endian_svg.png)
  
  
 ## 中端 Middle-Endian
