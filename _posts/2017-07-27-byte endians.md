@@ -20,7 +20,7 @@ big-edian和little-endian。
 ***
 **词源**：据Jargon File记载，endian这个词来源于Jonathan Swift在1726年写的讽刺小说 "Gulliver's Travels"（《格利佛游记》）。该小说在描述Gulliver畅游小人国时碰到了如下的一个场景。在小人国里的小人因为非常小（身高6英寸）所以总是碰到一些意想不到的问题。有一次因为对水煮蛋该从大的一端（Big-End）剥开还是小的一端（Little-End）剥开的争论而引发了一场战争，并形成了两支截然对立的队伍：支持从Big-End剥开的人Swift就称作Big-Endians而支持从Little-End剥开的人就称作Little-Endians……（后缀ian表明的就是支持某种观点的人:-）。Endian这个词由此而来。
 >　　1980年，Danny Cohen在其著名的论文"On Holy Wars and a Plea for Peace"中为了平息一场关于在消息中字节该以什么样的顺序进行传送的争论而引用了该词。该文中，Cohen非常形象贴切地把支持从一个消息序列的MSB开始传送的那伙人叫做Big-Endians，支持从LSB开始传送的相对应地叫做Little-Endians。此后Endian这个词便随着这篇论文而被广为采用。
-***
+
 
 ![](../../../../sources/images/posts/250px-Endianessmap_svg.png)
 
