@@ -9,11 +9,11 @@ categories: Android
 废话不多说，上代码：
 ```java
 /**
-    * Android中获取指定包名下的所有类
-    * @param packageName 指定报名 com.xx.xx.xx.adapter
-    * @param packageCodePath activity.getPackageCodePath();
-    * @return
-    */
+ * Android中获取指定包名下的所有类
+ * @param packageName 指定报名 com.xx.xx.xx.adapter
+ * @param packageCodePath  activity.getPackageCodePath();
+ * @return
+ */
 List<String> getClassName(String packageName, String packageCodePath){
     List<String>classNameList=new ArrayList<>();
     try {
