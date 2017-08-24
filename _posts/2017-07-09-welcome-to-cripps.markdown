@@ -20,6 +20,6 @@ print_hi('Tom')
 
 Check out the [Cripps docs][Cripps-docs] for more info on how to get the most out of Cripps. File all bugs/feature requests at [Cripps’s GitHub repo][Cripps-gh]. If you have questions, you can ask them on [Cripps Talk][Cripps-talk].
 
-[Cripps-docs]: http://cripps.oschina.io/
-[Cripps-gh]:   http://cripps.oschina.io/
-[Cripps-talk]: http://cripps.oschina.io/
+[Cripps-docs]: https://beanstt.github.io
+[Cripps-gh]:   https://beanstt.github.io
+[Cripps-talk]: https://beanstt.github.io
