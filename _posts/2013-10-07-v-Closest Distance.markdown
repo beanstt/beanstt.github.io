@@ -9,18 +9,18 @@ categories: vyouyue
 提取算法，数据结构，缓存，存储方式，设计思想？
 
 
-<table class="table table-striped">
+<table class="table table-striped" style="font-size:10px;">
 	<tr>
-		<td>FIELD</td>
-		<td>TYPE</td>
-		<td>COLLATION</td>
-		<td>NULL</td>
-		<td>KEY</td>
-		<td>DEFAULT</td>
-		<td>Extra</td>
-		<td>PRIVILEGES</td>
-		<td>COMMENT</td>
-	</tr>	
+		<th align="left">FIELD</th>
+		<th align="left">TYPE</th>
+		<th align="left">COLLATION</th>
+		<th align="left">NULL</th>
+		<th align="left">KEY</th>
+		<th align="left">DEFAULT</th>
+		<th align="left">Extra</th>
+		<th align="left">PRIVILEGES</th>
+		<th align="left">COMMENT</th>
+	</tr>
 	<tr>
 		<td>testId</td>
 		<td>INT(11)</td>
@@ -41,7 +41,6 @@ categories: vyouyue
 		<td>(NULL)</td>
 		<td></td>
 		<td>SELECT,INSERT,UPDATE,REFERENCES</td>
-		<td></td>
 		<td></td>
 	</tr>
 	<tr>
