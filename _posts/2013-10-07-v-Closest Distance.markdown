@@ -90,30 +90,30 @@ categories: vyouyue
 </table>
 
 
-### 获取某经纬度附近dist km的商户信息（肯定要区分商户类别, 经纬度，开始记录，记录数量，范围距离）
+#### 获取某经纬度附近dist km的商户信息（肯定要区分商户类别, 经纬度，开始记录，记录数量，范围距离）
 ```SQL
 DROP PROCEDURE IF EXISTS pro_getNearUser
 CREATE PROCEDURE pro_getNearUser(IN mylon DOUBLE,IN mylat DOUBLE,IN begin INT,IN counts INT,IN dist INT)  
 BEGIN  
-	DECLARE mylon DOUBLE;  
-	DECLARE mylat DOUBLE;   
-	DECLARE lon1 FLOAT;  
-	DECLARE lon2 FLOAT; 
-	DECLARE lat1 FLOAT; 
-	DECLARE lat2 FLOAT;  
-	-- calculate lon and lat for the rectangle:
-	SET lon1 = mylon-dist/ABS(COS(RADIANS(mylat))*69);  
-	SET lon2 = mylon+dist/ABS(COS(RADIANS(mylat))*69); 
-	SET lat1 = mylat-(dist/69);   
-	SET lat2 = mylat+(dist/69);
-	-- run the query:
-	SELECT  merchantId,3956 * 2 * ASIN(SQRT(  POWER(SIN((orig.userLon - dest.userLat) * PI()/180 / 2), 2) +  
-		COS(orig.userLat * PI()/180) * COS(dest.userLat * PI()/180) * 
-		POWER(SIN((orig.userLon -dest.userLon) * PI()/180 / 2), 2)  )) AS distance 
-	FROM  users dest,  users orig 
-	WHERE  dest.userLon BETWEEN lon1 AND lon2  AND  dest.userLon BETWEEN lat1 AND lat2 
-	HAVING distance < dist 
-	ORDER BY distance 
-	LIMIT begin,counts;  
+  DECLARE mylon DOUBLE;  
+  DECLARE mylat DOUBLE;   
+  DECLARE lon1 FLOAT;  
+  DECLARE lon2 FLOAT; 
+  DECLARE lat1 FLOAT; 
+  DECLARE lat2 FLOAT;  
+  -- calculate lon and lat for the rectangle:
+  SET lon1 = mylon-dist/ABS(COS(RADIANS(mylat))*69);  
+  SET lon2 = mylon+dist/ABS(COS(RADIANS(mylat))*69); 
+  SET lat1 = mylat-(dist/69);   
+  SET lat2 = mylat+(dist/69);
+  -- run the query:
+  SELECT  merchantId,3956 * 2 * ASIN(SQRT(  POWER(SIN((orig.userLon - dest.userLat) * PI()/180 / 2), 2) +  
+  	COS(orig.userLat * PI()/180) * COS(dest.userLat * PI()/180) * 
+  	POWER(SIN((orig.userLon -dest.userLon) * PI()/180 / 2), 2)  )) AS distance 
+  FROM  users dest,  users orig 
+  WHERE  dest.userLon BETWEEN lon1 AND lon2  AND  dest.userLon BETWEEN lat1 AND lat2 
+  HAVING distance < dist 
+  ORDER BY distance 
+  LIMIT begin,counts;  
 END
 ```
