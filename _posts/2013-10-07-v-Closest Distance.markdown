@@ -8,7 +8,7 @@ categories: vyouyue
 
 提取算法，数据结构，缓存，存储方式，设计思想？
 
- 
+
 |FIELD          | TYPE          | COLLATION       | NULL   | KEY    | DEFAULT  |Extra           |PRIVILEGES                       |COMMENT |
 | --------   	| --------     	|---------------  |------  |------  |-------   |--------------  |-------------------------------  |-------|
 |testId         | INT(11)       | (NULL)          | NO     | PRI    | (NULL)   |AUTO_INCREMENT  |SELECT,INSERT,UPDATE,REFERENCES  |编号      |     
@@ -16,10 +16,44 @@ categories: vyouyue
 |testLongitude  | DOUBLE        | (NULL)          | YES    |        | (NULL)   |                |SELECT,INSERT,UPDATE,REFERENCES  |经度      |                                
 |testLatitude   | DOUBLE        | (NULL)          | YES    |        | (NULL)   |                |SELECT,INSERT,UPDATE,REFERENCES  |纬度      |                                 
 |createTime     | DATETIME      | (NULL)          | NO     |        | (NULL)   |                |SELECT,INSERT,UPDATE,REFERENCES  |       |
-
+<table class="table table-striped table-hover">
+	<tr>
+		<td>FIELD</td>
+		<td>TYPE</td>
+		<td>COLLATION</td>
+		<td>NULL</td>
+		<td>KEY</td>
+		<td>DEFAULT</td>
+		<td>Extra</td>
+		<td>PRIVILEGES</td>
+		<td>COMMENT</td>
+	</tr>	
+	<tr>
+		<td>testId</td>
+		<td>INT(11)</td>
+		<td>(NULL)</td>
+		<td>NO</td>
+		<td>PRI</td>
+		<td>(NULL)</td>
+		<td>AUTO_INCREMENT</td>
+		<td>SELECT,INSERT,UPDATE,REFERENCES</td>
+		<td>编号</td>
+	</tr>		
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>	
+</table>
 
 ## 获取某经纬度附近dist km的商户信息（肯定要区分商户类别, 经纬度，开始记录，记录数量，范围距离）
-```
+```SQL
 DROP PROCEDURE IF EXISTS pro_getNearUser
 CREATE PROCEDURE pro_getNearUser(IN mylon DOUBLE,IN mylat DOUBLE,IN begin INT,IN counts INT,IN dist INT)  
 BEGIN  
