@@ -90,7 +90,7 @@ categories: vyouyue
 </table>
 
 
-#### 获取某经纬度附近dist km的商户信息（肯定要区分商户类别, 经纬度，开始记录，记录数量，范围距离）
+### 获取某经纬度附近dist km的商户信息，肯定要区分商户类别、经纬度、开始记录、记录数量、范围距离
 ```SQL
 DROP PROCEDURE IF EXISTS pro_getNearUser
 CREATE PROCEDURE pro_getNearUser(IN mylon DOUBLE,IN mylat DOUBLE,IN begin INT,IN counts INT,IN dist INT)  
