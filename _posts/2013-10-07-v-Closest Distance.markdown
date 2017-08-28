@@ -9,14 +9,7 @@ categories: vyouyue
 提取算法，数据结构，缓存，存储方式，设计思想？
 
 
-|FIELD          | TYPE          | COLLATION       | NULL   | KEY    | DEFAULT  |Extra           |PRIVILEGES                       |COMMENT |
-| --------   	| --------     	|---------------  |------  |------  |-------   |--------------  |-------------------------------  |-------|
-|testId         | INT(11)       | (NULL)          | NO     | PRI    | (NULL)   |AUTO_INCREMENT  |SELECT,INSERT,UPDATE,REFERENCES  |编号      |     
-|testName       | VARCHAR(64)   | utf8_general_ci | NO     |        | (NULL)   |                |SELECT,INSERT,UPDATE,REFERENCES  |       |
-|testLongitude  | DOUBLE        | (NULL)          | YES    |        | (NULL)   |                |SELECT,INSERT,UPDATE,REFERENCES  |经度      |                                
-|testLatitude   | DOUBLE        | (NULL)          | YES    |        | (NULL)   |                |SELECT,INSERT,UPDATE,REFERENCES  |纬度      |                                 
-|createTime     | DATETIME      | (NULL)          | NO     |        | (NULL)   |                |SELECT,INSERT,UPDATE,REFERENCES  |       |
-<table class="table table-striped table-hover">
+<table class="table table-striped">
 	<tr>
 		<td>FIELD</td>
 		<td>TYPE</td>
@@ -40,19 +33,65 @@ categories: vyouyue
 		<td>编号</td>
 	</tr>		
 	<tr>
+		<td>testName</td>
+		<td>VARCHAR(64)</td>
+		<td>utf8_general_ci</td>
+		<td>NO</td>
+		<td></td>
+		<td>(NULL)</td>
+		<td></td>
+		<td>SELECT,INSERT,UPDATE,REFERENCES</td>
 		<td></td>
 		<td></td>
+	</tr>
+	<tr>
+		<td>testLongitude</td>
+		<td>DOUBLE</td>
+		<td>(NULL)</td>
+		<td>YES</td>
 		<td></td>
+		<td>(NULL)</td>
 		<td></td>
+		<td>SELECT,INSERT,UPDATE,REFERENCES</td>
+		<td>经度</td>
+	</tr>                                
+	<tr>
+		<td>testLatitude</td>
+		<td>DOUBLE</td>
+		<td>(NULL)</td>
+		<td>YES</td>
 		<td></td>
+		<td>(NULL)</td>
 		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
+		<td>SELECT,INSERT,UPDATE,REFERENCES</td>
+		<td>纬度</td>
 	</tr>	
+	<tr>
+		<td>testLatitude</td>
+		<td>DOUBLE</td>
+		<td>(NULL)</td>
+		<td>YES</td>
+		<td></td>
+		<td>(NULL)</td>
+		<td></td>
+		<td>SELECT,INSERT,UPDATE,REFERENCES</td>
+		<td>纬度</td>
+	</tr>                                 
+	<tr>
+		<td>createTime</td>
+		<td>DATETIME</td>
+		<td>(NULL)</td>
+		<td>NO</td>
+		<td></td>
+		<td>(NULL)</td>
+		<td></td>
+		<td>SELECT,INSERT,UPDATE,REFERENCES</td>
+		<td></td>
+	</tr>
 </table>
 
-## 获取某经纬度附近dist km的商户信息（肯定要区分商户类别, 经纬度，开始记录，记录数量，范围距离）
+
+### 获取某经纬度附近dist km的商户信息（肯定要区分商户类别, 经纬度，开始记录，记录数量，范围距离）
 ```SQL
 DROP PROCEDURE IF EXISTS pro_getNearUser
 CREATE PROCEDURE pro_getNearUser(IN mylon DOUBLE,IN mylat DOUBLE,IN begin INT,IN counts INT,IN dist INT)  
@@ -70,7 +109,8 @@ BEGIN
 	SET lat2 = mylat+(dist/69);
 	-- run the query:
 	SELECT  merchantId,3956 * 2 * ASIN(SQRT(  POWER(SIN((orig.userLon - dest.userLat) * PI()/180 / 2), 2) +  
-		COS(orig.userLat * PI()/180) *  COS(dest.userLat * PI()/180) *  POWER(SIN((orig.userLon -dest.userLon) * PI()/180 / 2), 2)  )) AS distance 
+		COS(orig.userLat * PI()/180) * COS(dest.userLat * PI()/180) * 
+		POWER(SIN((orig.userLon -dest.userLon) * PI()/180 / 2), 2)  )) AS distance 
 	FROM  users dest,  users orig 
 	WHERE  dest.userLon BETWEEN lon1 AND lon2  AND  dest.userLon BETWEEN lat1 AND lat2 
 	HAVING distance < dist 
