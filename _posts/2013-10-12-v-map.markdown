@@ -3,6 +3,7 @@ layout: post
 title:  "[V]-地图开发日志"
 date:   2013-10-12 21:22:20 +0800
 categories: vyouyue
+comments: true
 ---
 # 发表于2013年10月16日
 ***

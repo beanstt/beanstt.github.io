@@ -3,6 +3,7 @@ layout: post
 title:  "[V]-最近距离"
 date:   2013-10-07 20:00:20 +0800
 categories: vyouyue
+comments: true
 ---
 所有商户都有GPS坐标。当给定一个坐标，计算出离给定坐标最近的10个商户，并可再次搜索（再搜时需排除原已搜过的）。
 
