@@ -2,7 +2,7 @@
 layout: post
 title:  "Spring Shell 学习札记"
 date:   2017-09-06 16:00:00 +0800
-categories: spring, shell
+categories: springshell
 comments: true
 ---
 有机会在工作中使用Shell相关，参考了SpringShell，中途记录一则。   
@@ -16,7 +16,9 @@ comments: true
 ##     2.x PK 1.x
 1.  2.x更加规范，更加标准，对接口使用了standard API；
 2.  2.x使用@ShellComponent、@ShellMethod、@ShellOption代替了1.x的@Component、@CliCommand、@CliOption；
-3.  2.x只需要引入spring-shell-starter即可。
+3.  2.x只需要引入spring-shell-starter即可；
+4.  2.x支持tab获取命令。
+
 
 ##     主要代码
 实例是一个springboot项目:    
@@ -43,8 +45,9 @@ public class CaseCommands
     }
 }
 ```
-
-
+##     运行代码
+![启动shell](../../../../sources/images/posts/shell1.png)
+![shell示例](../../../../sources/images/posts/shell2.png)
 ##     问题
 在使用中注意到@ShellOption中的optOut添加上后，代码执行就会自动结束，不会在控制台出现“shell>”符号。
 ##     你可以参与的
