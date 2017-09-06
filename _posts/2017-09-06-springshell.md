@@ -46,8 +46,12 @@ public class CaseCommands
 }
 ```
 ##     运行代码
-![启动shell](../../../../sources/images/posts/shell1.png)
-![shell示例](../../../../sources/images/posts/shell2.png)
+![启动shell](../../../../sources/images/posts/shell1.png)  
+
+![shell示例](../../../../sources/images/posts/shell2.png)  
+
+![shell示例](../../../../sources/images/posts/shell3.png)  
+
 ##     问题
 在使用中注意到@ShellOption中的optOut添加上后，代码执行就会自动结束，不会在控制台出现“shell>”符号。
 ##     你可以参与的
