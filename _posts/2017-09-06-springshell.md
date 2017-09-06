@@ -41,9 +41,8 @@ public class CaseCommands
 }
 ```
 ###     问题
-1.  在使用中注意到@ShellOption中的optOut添加上后，代码执行就会自动结束，不会在控制台出现“shell>”符号。
-
+在使用中注意到@ShellOption中的optOut添加上后，代码执行就会自动结束，不会在控制台出现“shell>”符号。
 ###     你可以参与的
 此文作为学习入门文档，如果后续有新的见解或更有帮助的内容，会持续更新。
 ###     我还可以做的
-如果您在阅读中发现文中描述有不正确的地方，欢迎留言指正，留言交流或者在![“关于我”](https://beanstt.github.io/about/index.html)加我微信。
+如果您在阅读中发现文中描述有不正确的地方，欢迎留言指正，留言交流或者在[关于我](https://beanstt.github.io/about/index.html)加我微信。
