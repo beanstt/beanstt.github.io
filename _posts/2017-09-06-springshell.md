@@ -9,16 +9,17 @@ comments: true
 #   What is Spring Shell?
 略。
 #   Using Spring Shell
-###     版本
+##     版本
 目前主要有1.2.0.RELEASE、1.2.1.BUILD-SNAPSHOT、2.0.0.BUILD-SNAPSHOT
-###     建议使用
+##     建议使用
 2.0.0.BUILD-SNAPSHOT
-###     2.x PK 1.x
+##     2.x PK 1.x
 1.  2.x更加规范，更加标准，对接口使用了standard API；
 2.  2.x使用@ShellComponent、@ShellMethod、@ShellOption代替了1.x的@Component、@CliCommand、@CliOption；
 3.  2.x只需要引入spring-shell-starter即可；
-###     主要代码
-实例是一个springboot项目：
+##     主要代码
+实例是一个springboot项目:    
+
 ```java
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
@@ -40,9 +41,11 @@ public class CaseCommands
     }
 }
 ```
-###     问题
+
+
+##     问题
 在使用中注意到@ShellOption中的optOut添加上后，代码执行就会自动结束，不会在控制台出现“shell>”符号。
-###     你可以参与的
+##     你可以参与的
 此文作为学习入门文档，如果后续有新的见解或更有帮助的内容，会持续更新。
-###     我还可以做的
+##     我还可以做的
 如果您在阅读中发现文中描述有不正确的地方，欢迎留言指正，留言交流或者在[关于我](https://beanstt.github.io/about/index.html)加我微信。
