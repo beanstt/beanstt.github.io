@@ -37,7 +37,8 @@ public class CaseCommands
     @ShellMethod(key = "b-simple", value = "Print a simple hello world message")
     public String simple(
             @ShellOption(value = { "message" }, help = "The hello world message") final String message,
-            @ShellOption(value = { "location" }, help = "Where you are saying hello", defaultValue="At work") final String location) {
+            @ShellOption(value = { "location" }, help = "Where you are saying hello", defaultValue="At work") final String location) 
+    {
         return "Message = [" + message + "] Location = [" + location + "]";
     }
 }
