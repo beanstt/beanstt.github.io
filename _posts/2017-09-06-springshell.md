@@ -88,13 +88,7 @@ Spring Shell project 基于 JLine library, 给我们带来了非常好的交互�
 ---
 
 ##     内置命令
-command | comment
----|---
-clear  | Clear the shell screen. 
-exit  |  quit: Exit the shell. 
-help  | Display help about available commands. 
-script  | Read and execute commands from a file. 
-stacktrace  | Display the full stacktrace of the last error.
+![](../../../../sources/images/posts/shell6.png)
 
 ####    内置命令可以通过排除spring-shell-standard-commands使其不可用   
 ```xml
