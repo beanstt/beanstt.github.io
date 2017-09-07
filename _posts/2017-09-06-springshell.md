@@ -10,6 +10,7 @@ comments: true
 #   内容更新进度
 2017.09.06  基本描述，完成shell的基本使用；   
 2017.09.07  补充Interacting with the Shell，内置命令系列；   
+
 ---
 
 #   What is Spring Shell?
@@ -110,7 +111,8 @@ public static void main(String[] args) throws Exception {
 ```
 ####    override指定的内置命令
 1.  像上面所说的禁用指定的内置命令；    
-2.  自定义类实现<Command>.Command，例如重新定义clear命令：  
+2.  自定义类实现<Command>.Command，例如重新定义clear命令：   
+
 ```java
 public class MyClear implements Clear.Command {
     @ShellCommand("Clear the screen, only better.")
@@ -121,6 +123,16 @@ public class MyClear implements Clear.Command {
 ```
 
 ---
+
+##  小技巧
+通过标记快速识别命令是否可用。   
+![](../../../../sources/images/posts/shell4.png)
+   
+![](../../../../sources/images/posts/shell5.png)
+
+
+---
+
 
 ##     你可以参与的
 如果您在阅读中发现文中描述有不正确的地方，欢迎留言指正，留言交流或者在[关于我](https://beanstt.github.io/about/index.html)加我微信。
