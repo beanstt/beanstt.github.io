@@ -10,6 +10,7 @@ comments: true
 #   内容更新进度
 2017.09.06  基本描述，完成shell的基本使用；   
 2017.09.07  补充Interacting with the Shell，内置命令系列；   
+---
 
 #   What is Spring Shell?
 略。
@@ -25,6 +26,7 @@ comments: true
 4.  2.x支持tab获取命令，当让tab不仅限于命令，同样适用于参数；
 5.  2.x减少了很多用处不大的内置命令，使2.x更轻盈，功能明确，结构清晰。
 
+---
 
 ##     主要代码
 实例是一个springboot项目:    
@@ -61,6 +63,8 @@ public class CaseCommands
 ##     问题
 在使用中注意到@ShellOption中的optOut添加上后，代码执行就会自动结束，不会在控制台出现“shell>”符号。
 
+---
+
 ##     Interacting with the Shell
 Spring Shell project 基于 JLine library, 给我们带来了非常好的交互体验。     
 1.  tab键, 本人觉得是2.x做的最优秀的改进，如前所述，不仅限于获取命令，同样适用于参数；
@@ -71,7 +75,8 @@ Spring Shell project 基于 JLine library, 给我们带来了非常好的交互�
 6.  Esc b, move backward one word at a time(一次回退移动一个字)；
 7.  \, 使用\ Enter，开启新的一行继续输入；
 8.  ", 使用"并开未结束，并Enter，会继续一条命令的输入，知道输入关闭的"；
-9.  
+
+---
 
 ##     内置命令
 clear: Clear the shell screen.   
@@ -114,6 +119,8 @@ public class MyClear implements Clear.Command {
     }
 }
 ```
+
+---
 
 ##     你可以参与的
 如果您在阅读中发现文中描述有不正确的地方，欢迎留言指正，留言交流或者在[关于我](https://beanstt.github.io/about/index.html)加我微信。
