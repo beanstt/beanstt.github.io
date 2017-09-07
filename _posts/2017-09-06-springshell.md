@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "【自荐】- 跟我一起学Spring Shell（学习札记）"
+title:  "[自荐] - 跟我一起学Spring Shell（学习札记）"
 date:   2017-09-06 16:00:00 +0800
 categories: springshell
 comments: true
@@ -88,11 +88,13 @@ Spring Shell project 基于 JLine library, 给我们带来了非常好的交互�
 ---
 
 ##     内置命令
-clear: Clear the shell screen.   
-exit, quit: Exit the shell.   
-help: Display help about available commands.   
-script: Read and execute commands from a file.   
-stacktrace: Display the full stacktrace of the last error.   
+command | comment
+---|---
+clear  | Clear the shell screen. 
+exit  |  quit: Exit the shell. 
+help  | Display help about available commands. 
+script  | Read and execute commands from a file. 
+stacktrace  | Display the full stacktrace of the last error.
 
 ####    内置命令可以通过排除spring-shell-standard-commands使其不可用   
 ```xml

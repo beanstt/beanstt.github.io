@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "【V】- 商户管理需求分析"
+title:  "[V] - 商户管理需求分析"
 date:   2013-10-01 16:24:20 +0800
 categories: vyouyue
 comments: true

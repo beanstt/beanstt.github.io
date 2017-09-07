@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "【V】- 最近距离"
+title:  "[V] - 最近距离"
 date:   2013-10-07 20:00:20 +0800
 categories: vyouyue
 comments: true
