@@ -125,6 +125,9 @@ public class MyClear implements Clear.Command {
     }
 }
 ```
+####    ShellMethodAvailability技巧
+1.  通过ShellMethodAvailability默认的通配符*，可以轻松地打开或关闭单个类的所有命令；
+2.  ShellMethodAvailability可以用在命令方法上，也可以反转用在检查命令是否可用的方法上。
 
 ---
 
