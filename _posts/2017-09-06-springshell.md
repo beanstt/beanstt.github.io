@@ -1,11 +1,19 @@
 ---
 layout: post
-title:  "[自荐]-跟我一起学Spring Shell（学习札记）"
+title:  "【自荐】- 跟我一起学Spring Shell（学习札记）"
 date:   2017-09-06 16:00:00 +0800
 categories: springshell
 comments: true
 ---
 有机会在工作中使用Shell相关，参考了SpringShell，中途记录一则。   
+
+```
+sequenceDiagram
+    loop every day
+        A->>B: How are you?
+        B->>A: Great!
+    end
+```
 
 #   内容更新进度
 2017.09.06  基本描述，完成shell的基本使用；   

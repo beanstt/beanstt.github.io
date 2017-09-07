@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[V]-商户管理开发日志"
+title:  "【V】- 商户管理开发日志"
 date:   2013-10-21 22:52:10 +0800
 categories: vyouyue
 comments: true
