@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[自荐] - 跟我一起学Spring Shell 2.0（学习札记）"
+title:  "[自荐] - 跟我一起学Spring Shell 2.0"
 date:   2017-09-06 16:00:00 +0800
 categories: springshell
 comments: true
