@@ -22,13 +22,14 @@ sequenceDiagram
     本地.m2文件夹中保存有使用过Nexus私服下载的third.jar文件；
 
 ### 答疑
-    使用私服或者公网仓库下载jar时候，由于本地.m2对应的third的jar文件夹里保存了一份_remote.repositories记录文件，所以当我们私服撤销后，我们需要做的事，就是要把这个文件删除掉即可。
+    使用私服或者公网仓库下载jar时候，由于本地.m2对应的third的jar文件夹里保存了一份_remote.repositories记录文件，  
+    所以当我们私服撤销后，我们需要做的事，就是要把这个文件删除掉即可。
 
 ### _remote.repositories内容实例
-    ```
-    #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
-    #Wed May 04 13:26:01 CST 2016
-    ojdbc6-11.2.0.1.0.pom>nexus=
-    ojdbc6-11.2.0.1.0.jar>nexus=
-    ```
+
+    #NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.  
+    #Wed May 04 13:26:01 CST 2016  
+    ojdbc6-11.2.0.1.0.pom>nexus=  
+    ojdbc6-11.2.0.1.0.jar>nexus=  
+
     其中>nexus=就是仓库的名称，因本地setting.xml配置不同而不同。
