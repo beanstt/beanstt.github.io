@@ -29,7 +29,7 @@ markdown: kramdown
 # theme: minima
 gems:
   - jekyll-feed
-  - emoji_for_jekyll
+# - emoji_for_jekyll
 
 # disqus settings
 #disqus:
