@@ -21,13 +21,10 @@ permalink: /social/
   .clear {
     overflow: hidden;
   }
-  a {
-    text-decoration:none;
-  }
 </style>
 
 <div class="container" style="margin:0 auto;">
-  <h1>欢迎你和我<a href="/about/index.html">联系</a>交换链接</h1>
+  <h1>欢迎你和我<a href="/about/index.html" style="text-decoration:none;">联系</a>交换链接</h1>
   <div class="m-b-15 clear">
     <img src="/sources/images/ad/red.png" class="col-md-3 pull-left"/>
     <img src="/sources/images/ad/red.png" class="col-md-3 pull-left"/>
