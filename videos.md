@@ -4,7 +4,7 @@ title: 克瑞普斯的主页-摄影集
 permalink: /videos/
 ---
 
-<div style="width:1000px;">
+<div style="width:1000px;margin:0 auto;">
     <img src="/sources/images/photography/20171122130311.jpg" style="width:100%; height:auto; margin-bottom:20px;">
     <img src="/sources/images/photography/20171122130215.jpg" style="width:100%; height:auto; margin-bottom:20px;">
     <img src="/sources/images/photography/20171122130149.jpg" style="width:100%; height:auto; margin-bottom:20px;">
