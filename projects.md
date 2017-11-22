@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 工作室
+title: 克瑞普斯的主页-工作室
 permalink: /projects/
 ---
 

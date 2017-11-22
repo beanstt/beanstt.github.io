@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Donate
+title: 克瑞普斯的主页-Donate
 permalink: /donate/
 ---
 
