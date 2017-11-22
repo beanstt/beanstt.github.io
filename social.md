@@ -6,10 +6,11 @@ permalink: /social/
 
 <style type="text/css" media="screen">
   h1 {
-    margin: 0 0 10px 0;
-    font-size: 4em;
+    font-size: 3em;
     line-height: 1;
     letter-spacing: -1px;
+    text-align: center;
+    margin: 50px 0;
   }
   .m-b-15 {
     margin-bottom: 15px; 
@@ -20,10 +21,13 @@ permalink: /social/
   .clear {
     overflow: hidden;
   }
+  a {
+    text-decoration:none;
+  }
 </style>
 
 <div class="container" style="margin:0 auto;">
-  <h1>欢迎你和我联系交换链接</h1>
+  <h1>欢迎你和我<a href="/about/index.html">联系</a>交换链接</h1>
   <div class="m-b-15 clear">
     <img src="/sources/images/ad/red.png" class="col-md-3 pull-left"/>
     <img src="/sources/images/ad/red.png" class="col-md-3 pull-left"/>
